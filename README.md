@@ -32,6 +32,7 @@ Compared to alternative termite infection simulation tools, our project stands o
 3. Install the required packages by running the following commands in the R console:
    ```R
    install.packages(c("shiny", "deSolve", "ggplot2", "dplyr", "scales", "tidyr", "bslib", "shinydashboard"))
+4. The Shiny application will open in your web browser.
 
 ## Usage
 1.Running the Application:
@@ -48,19 +49,42 @@ Default Simulation: Run the app with default parameters to see a baseline simula
 Adjusting Forage Interval: Change the "Forage interval (days)" slider to 1 and observe how more frequent foraging affects the spread of harmful factors.
 Changing Mortality Rate: In the "Workers" tab, increase the "Mortality rate (γ_w)" slider to 0.5 and see the impact on worker population deaths.
 
-## Contributing
+### Using the Interface
+
+- **Sidebar Settings**: Adjust global settings such as worker forage interval, forage infection rate, initial infection proportions for different castes, and simulation days.
+
+- **Tab Panels**: Navigate through different tab panels (Overview, Workers, Reproductives, Young, Soldiers, Nymphs) to view population trends, dynamics, cumulative deaths, and related equations for each caste. Adjust parameters in each caste's panel to see how they affect the simulation results.
+
+
+### Example Usage
+
+- **Default Simulation**: Run the app with default parameters to see a baseline simulation of termite population dynamics over 60 days, with a forage interval of 2 days and 70% forage infection rate.
+
+- **Adjusting Forage Interval**: Change the "Forage interval (days)" slider to 1 and observe how more frequent foraging affects the spread of harmful factors.
+
+- **Changing Mortality Rate**: In the "Workers" tab, increase the "Mortality rate (y_w)" slider to 0.5 and see the impact on worker population deaths.
+
+
+### Contributing
+
 We welcome contributions to this project! If you want to contribute, please follow these steps:
-1.Fork the Repository: Fork this repository to your own GitHub account.
-2.Clone the Fork: Clone the forked repository to your local machine.
-3.Create a Branch: Create a new branch for your feature or bug fix (e.g., git checkout -b feature/new-feature or git checkout -b bugfix/issue-fix).
-4.Make Changes: Implement your changes, following the existing code style and structure.
-5.Test Your Changes: Ensure that the application runs correctly with your changes and that any new features or fixes work as intended.
-6.Commit and Push: Commit your changes and push them to your forked repository.
-7.Create a Pull Request: Open a pull request from your branch to the main branch of this repository.
-Development Commands
-Linting: Although not strictly enforced, you can use R linting tools like lintr to check your code for style and potential issues. Install lintr with install.packages("lintr") and run lintr::lint("path/to/your/code.R").
 
-Testing: Currently, there are no formal tests, but you should manually test the application thoroughly after making changes.
+1. **Fork the Repository**: Fork this repository to your own GitHub account.
+2. **Clone the Fork**: Clone the forked repository to your local machine.
+3. **Create a Branch**: Create a new branch for your feature or bug fix (e.g., `git checkout -b feature/new-feature` or `git checkout -b bugfix/issue-fix`).
+4. **Make Changes**: Implement your changes, following the existing code style and structure.
+5. **Test Your Changes**: Ensure that the application runs correctly with your changes and that any new features or fixes work as intended.
+6. **Commit and Push**: Commit your changes and push them to your forked repository.
+7. **Create a Pull Request**: Open a pull request from your branch to the main branch of this repository.
 
-## Authors and acknowledgment
+
+### Development Commands
+
+- **Linting**: Although not strictly enforced, you can use R linting tools like `lintr` to check your code for style and potential issues. Install `lintr` with `install.packages("lintr")` and run `lintr::lint("path/to/your/code.R")`.
+
+- **Testing**: Currently, there are no formal tests, but you should manually test the application thoroughly after making changes.
+
+
+### Authors and Acknowledgment
+
 This software tool was developed by Team UM-Macau in 2025. We would like to acknowledge the contributions of all team members who worked on the modeling, coding, and testing of this application. Special thanks to those who conducted research on termite behavior and biology, which provided the foundation for the parameters and models used in this tool.
