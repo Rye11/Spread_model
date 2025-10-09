@@ -69,13 +69,13 @@ Compared to alternative termite infection simulation tools, our project stands o
 
 We welcome contributions to this project! If you want to contribute, please follow these steps:
 
-1. **Fork the Repository**: Fork this repository to your own GitHub account.
+1. **Fork the Repository**: Fork this repository(https://gitlab.igem.org/2025/software-tools/um-macau.git) to your own GitHub account.
 2. **Clone the Fork**: Clone the forked repository to your local machine.
 3. **Create a Branch**: Create a new branch for your feature or bug fix (e.g., `git checkout -b feature/new-feature` or `git checkout -b bugfix/issue-fix`).
 4. **Make Changes**: Implement your changes, following the existing code style and structure.
 5. **Test Your Changes**: Ensure that the application runs correctly with your changes and that any new features or fixes work as intended.
 6. **Commit and Push**: Commit your changes and push them to your forked repository.
-7. **Create a Pull Request**: Open a pull request from your branch to the main branch of this repository.
+7. **Create a Pull Request**: Open a pull request from your branch to the main branch of this repository(https://gitlab.igem.org/2025/software-tools/um-macau.git).
 
 
 ### Development Commands
