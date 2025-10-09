@@ -72,7 +72,7 @@ ui <- dashboardPage(
              sliderInput("forage_interval", "Forage interval (days):", 
                          min = 1, max = 10, value = 2, step = 1),  
              sliderInput("forage_infect_rate", "Infection rate when foraging (%):", 
-                         min = 1, max = 20, value = 5, step = 1)   
+                         min = 1, max = 100, value = 70, step = 1)   
     ),
     
     
