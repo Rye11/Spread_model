@@ -32,22 +32,22 @@ Compared to alternative termite infection simulation tools, our project stands o
 3. Install the required packages by running the following commands in the R console:
    ```R
    install.packages(c("shiny", "deSolve", "ggplot2", "dplyr", "scales", "tidyr", "bslib", "shinydashboard"))
-4. The Shiny application will open in your web browser.
 
 ## Usage
-1.Running the Application:
-Save the provided R Shiny code as a .R file (e.g., termite_simulator.R).
-Open the file in RStudio (or your preferred R environment).
-Click the "Run App" button in RStudio, or run the following command in the R console:
-shiny::runApp("path/to/termite_simulator.R")
-The Shiny application will open in your web browser.
-2.Using the Interface:
-Sidebar Settings: Adjust global settings such as worker forage interval, forage infection rate, initial infection proportions for different castes, and simulation days.
-Tab Panels: Navigate through different tab panels (Overview, Workers, Reproductives, Young, Soldiers, Nymphs) to view population trends, dynamics, cumulative deaths, and related equations for each caste. Adjust parameters in each caste's panel to see how they affect the simulation results.
-3.Example Usage:
-Default Simulation: Run the app with default parameters to see a baseline simulation of termite population dynamics over 60 days, with a forage interval of 2 days and 70% forage infection rate.
-Adjusting Forage Interval: Change the "Forage interval (days)" slider to 1 and observe how more frequent foraging affects the spread of harmful factors.
-Changing Mortality Rate: In the "Workers" tab, increase the "Mortality rate (γ_w)" slider to 0.5 and see the impact on worker population deaths.
+
+1. **Running the Application**:
+   - Save the provided R Shiny code as a `.R` file (e.g., `termite_simulator.R`).
+   - Open the file in RStudio (or your preferred R environment).
+   - Click the "Run App" button in RStudio, or run the following command in the R console:
+     ```R
+     shiny::runApp("path/to/termite_simulator.R")
+2. **Using the Interface**:
+   - Sidebar Settings: Adjust global settings such as worker forage interval, forage infection rate, initial infection proportions for different castes, and simulation days.
+   - Tab Panels: Navigate through different tab panels (Overview, Workers, Reproductives, Young, Soldiers, Nymphs) to view population trends, dynamics, cumulative deaths, and related equations for each caste. Adjust parameters in each caste's panel to see how they affect the simulation results.
+3.  **Example Usage**:
+   - Default Simulation: Run the app with default parameters to see a baseline simulation of termite population dynamics over 60 days, with a forage interval of 2 days and 70% forage infection rate.
+   - Adjusting Forage Interval: Change the "Forage interval (days)" slider to 1 and observe how more frequent foraging affects the spread of harmful factors.
+   - Changing Mortality Rate: In the "Workers" tab, increase the "Mortality rate (γ_w)" slider to 0.5 and see the impact on worker population deaths.
 
 ### Using the Interface
 
