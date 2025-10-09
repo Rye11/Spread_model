@@ -10,32 +10,52 @@ this software tool. You will be able to keep working on your software after the 
 repository will be automatically deleted by the end of the season.
 
 ## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might
-be unfamiliar with (for example your team wiki). A list of Features or a Background subsection can also be added here.
-If there are alternatives to your project, this is a good place to list differentiating factors.
+This software tool, developed by Team UM-Macau in 2025, is designed to simulate and analyze the spread of harmful factors (such as toxins or pathogens) within termite colonies using a modified SEIR - Contact Network Model and a derivative SEID - based termite infection model. It enables users to quantify, simulate, and predict the transmission process of these harmful factors among different castes of termites (workers, reproductives, young, soldiers, nymphs). By adjusting various parameters related to termite transmission, conversion, and mortality rates, as well as foraging - related settings, users can explore how these factors impact termite colony dynamics like population survival and caste - specific mortality. For more detailed background and context, you can refer to our team wiki.
+Key features of this tool include:
+Multi - caste simulation: Simulates the spread dynamics for five termite castes with distinct parameters.
+Parameter customization: Allows users to adjust transmission rates, mortality rates, recovery rates, and foraging - related settings to observe different simulation outcomes.
+Visualization of population trends: Provides plots to display the trends of total population, alive population, and population status across different castes over time.
+Detailed caste - level analysis: Enables in - depth exploration of population dynamics, cumulative deaths, and related equations for each termite caste.
+Compared to alternative termite infection simulation tools, our project stands out with its focus on the specific SEID model adaptation for termites, detailed parameterization based on termite biology and behavior studies, and comprehensive visualization of both overall and caste - specific dynamics.
 
 ## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew.
-However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing
-specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a
-specific context like a particular programming language version or operating system or has dependencies that have to be
-installed manually, also add a Requirements subsection.
+Requirements
+R Environment: This software requires R to be installed on your system. You can download R from CRAN.
+Required R Packages: The following R packages need to be installed: shiny, deSolve, ggplot2, dplyr, scales, tidyr, bslib, shinydashboard.
+Installation Steps
+1.Install R from the official CRAN website if you haven't already.
+2.Open R or RStudio.
+3.Install the required packages by running the following commands in the R console:
+install.packages(c("shiny", "deSolve", "ggplot2", "dplyr", "scales", "tidyr", "bslib", "shinydashboard"))
 
 ## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of
-usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably
-include in the README.
+1.Running the Application:
+Save the provided R Shiny code as a .R file (e.g., termite_simulator.R).
+Open the file in RStudio (or your preferred R environment).
+Click the "Run App" button in RStudio, or run the following command in the R console:
+shiny::runApp("path/to/termite_simulator.R")
+The Shiny application will open in your web browser.
+2.Using the Interface:
+Sidebar Settings: Adjust global settings such as worker forage interval, forage infection rate, initial infection proportions for different castes, and simulation days.
+Tab Panels: Navigate through different tab panels (Overview, Workers, Reproductives, Young, Soldiers, Nymphs) to view population trends, dynamics, cumulative deaths, and related equations for each caste. Adjust parameters in each caste's panel to see how they affect the simulation results.
+3.Example Usage:
+Default Simulation: Run the app with default parameters to see a baseline simulation of termite population dynamics over 60 days, with a forage interval of 2 days and 70% forage infection rate.
+Adjusting Forage Interval: Change the "Forage interval (days)" slider to 1 and observe how more frequent foraging affects the spread of harmful factors.
+Changing Mortality Rate: In the "Workers" tab, increase the "Mortality rate (γ_w)" slider to 0.5 and see the impact on worker population deaths.
 
 ## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+We welcome contributions to this project! If you want to contribute, please follow these steps:
+1.Fork the Repository: Fork this repository to your own GitHub account.
+2.Clone the Fork: Clone the forked repository to your local machine.
+3.Create a Branch: Create a new branch for your feature or bug fix (e.g., git checkout -b feature/new-feature or git checkout -b bugfix/issue-fix).
+4.Make Changes: Implement your changes, following the existing code style and structure.
+5.Test Your Changes: Ensure that the application runs correctly with your changes and that any new features or fixes work as intended.
+6.Commit and Push: Commit your changes and push them to your forked repository.
+7.Create a Pull Request: Open a pull request from your branch to the main branch of this repository.
+Development Commands
+Linting: Although not strictly enforced, you can use R linting tools like lintr to check your code for style and potential issues. Install lintr with install.packages("lintr") and run lintr::lint("path/to/your/code.R").
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started.
-Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps
-explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce
-the likelihood that the changes inadvertently break something. Having instructions for running tests is especially
-helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+Testing: Currently, there are no formal tests, but you should manually test the application thoroughly after making changes.
 
 ## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+This software tool was developed by Team UM-Macau in 2025. We would like to acknowledge the contributions of all team members who worked on the modeling, coding, and testing of this application. Special thanks to those who conducted research on termite behavior and biology, which provided the foundation for the parameters and models used in this tool.
