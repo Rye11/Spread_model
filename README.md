@@ -10,23 +10,28 @@ this software tool. You will be able to keep working on your software after the 
 repository will be automatically deleted by the end of the season.
 
 ## Description
-This software tool, developed by Team UM-Macau in 2025, is designed to simulate and analyze the spread of harmful factors (such as toxins or pathogens) within termite colonies using a modified SEIR - Contact Network Model and a derivative SEID - based termite infection model. It enables users to quantify, simulate, and predict the transmission process of these harmful factors among different castes of termites (workers, reproductives, young, soldiers, nymphs). By adjusting various parameters related to termite transmission, conversion, and mortality rates, as well as foraging - related settings, users can explore how these factors impact termite colony dynamics like population survival and caste - specific mortality. For more detailed background and context, you can refer to our team wiki.
+This software tool, developed by Team UM-Macau in 2025, is designed to simulate and analyze the spread of harmful factors (such as toxins or pathogens) within termite colonies using a modified SEIR - Contact Network Model and a derivative SEID - based termite infection model. It enables users to quantify, simulate, and predict the transmission process of these harmful factors among different castes of termites (workers, reproductives, young, soldiers, nymphs). By adjusting various parameters related to termite transmission, conversion, and mortality rates, as well as foraging - related settings, users can explore how these factors impact termite colony dynamics like population survival and caste - specific mortality. For more detailed background and context, you can refer to our [team wiki](link_to_team_wiki). 
+
 Key features of this tool include:
-Multi - caste simulation: Simulates the spread dynamics for five termite castes with distinct parameters.
-Parameter customization: Allows users to adjust transmission rates, mortality rates, recovery rates, and foraging - related settings to observe different simulation outcomes.
-Visualization of population trends: Provides plots to display the trends of total population, alive population, and population status across different castes over time.
-Detailed caste - level analysis: Enables in - depth exploration of population dynamics, cumulative deaths, and related equations for each termite caste.
+- **Multi - caste simulation**: Simulates the spread dynamics for five termite castes with distinct parameters.
+- **Parameter customization**: Allows users to adjust transmission rates, mortality rates, recovery rates, and foraging - related settings to observe different simulation outcomes.
+- **Visualization of population trends**: Provides plots to display the trends of total population, alive population, and population status across different castes over time.
+- **Detailed caste - level analysis**: Enables in - depth exploration of population dynamics, cumulative deaths, and related equations for each termite caste.
+
 Compared to alternative termite infection simulation tools, our project stands out with its focus on the specific SEID model adaptation for termites, detailed parameterization based on termite biology and behavior studies, and comprehensive visualization of both overall and caste - specific dynamics.
 
+
 ## Installation
-Requirements
-R Environment: This software requires R to be installed on your system. You can download R from CRAN.
-Required R Packages: The following R packages need to be installed: shiny, deSolve, ggplot2, dplyr, scales, tidyr, bslib, shinydashboard.
-Installation Steps
-1.Install R from the official CRAN website if you haven't already.
-2.Open R or RStudio.
-3.Install the required packages by running the following commands in the R console:
-install.packages(c("shiny", "deSolve", "ggplot2", "dplyr", "scales", "tidyr", "bslib", "shinydashboard"))
+### Requirements
+- **R Environment**: This software requires R to be installed on your system. You can download R from [CRAN](https://cran.r-project.org/).
+- **Required R Packages**: The following R packages need to be installed: `shiny`, `deSolve`, `ggplot2`, `dplyr`, `scales`, `tidyr`, `bslib`, `shinydashboard`.
+
+### Installation Steps
+1. Install R from the official CRAN website if you haven't already.
+2. Open R or RStudio.
+3. Install the required packages by running the following commands in the R console:
+   ```R
+   install.packages(c("shiny", "deSolve", "ggplot2", "dplyr", "scales", "tidyr", "bslib", "shinydashboard"))
 
 ## Usage
 1.Running the Application:
